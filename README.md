@@ -1,4 +1,4 @@
-# LaTeX
+# Curso de LaTeX para utilizadores
 (Pronuncia-se "látéque")
 
 Modelo e introdução ao LaTeX para dissertação de mestrado.
@@ -11,7 +11,9 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
        e^{\displaystyle -\frac{1}{2}\left( \frac{x-\mu}{\sigma} \right)^2}
 ```
 
-
+* Formador: [João Pedro Cruz](http://sweet.ua.pt/pedrocruz/)
+* Data: a definir
+* Duração: 2h a 3h
 
 # Curso
 
