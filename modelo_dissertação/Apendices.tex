@@ -1,0 +1,44 @@
+%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'Apendices.tex'"}
+
+\documentclass[Tese.tex]{subfiles}
+
+\begin{document}
+
+\chapter*{Apêndices}
+\section*{Apêndice A -- Tabelas}
+\markboth{Apêndices}{Apêndices}
+%\renewcommand{\thechapter}{\Alph{chapter}}
+\renewcommand{\thechapter}{A}
+\renewcommand\thetable{\thechapter.\arabic{table}}
+
+
+
+\begin{longtable}{ccccc}
+\caption{Índices de ..........}\label{apend:tct}\\
+  \hline
+  Item & Nº.Acertos & \% Acertos & Corr. P.Bisserial & $\alpha$ (excluindo item i)\\
+  \hline
+   1    &     99  &   89.19  &  0.0820  & 0.8009\\
+   2    &     32  &   28.83  & -0.0147  & 0.8074\\
+  \hline
+\end{longtable}
+
+
+%\clearpage 
+
+\begin{longtable}{c|c|cc|ccc}
+\caption{Parâmetros de ....}\label{apend:tri1}\\
+  \hline
+  \multirow{2}{*}{Item} & Modelo 1PL & \multicolumn {2}{c|} {Modelo 2PL}    & \multicolumn {3}{c} {Modelo 3PL} \\
+   & Dificuld. & Dificuld. & Discrimin. & Dificuld. & Discrimin. & Casual\\ 
+  \hline
+  1  & -2.3750 & -26.0867 &  0.0810 & -8.4055 &   0.2496 & 0.0135 \\ 
+  2  &  1.0321 &  -4.4524 & -0.2047 & -2.2391 & -12.8908 & 0.2761 \\ 
+\hline
+\end{longtable}
+
+
+\clearpage 
+
+
+\end{document}

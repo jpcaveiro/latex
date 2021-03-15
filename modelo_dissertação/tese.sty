@@ -1,0 +1,180 @@
+
+%\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+%\usepackage{graphicx,xcolor,epstopdf}
+%\usepackage[usecolor,Mat]{uaThesis}
+%\usepackage[Mat]{uaThesis}
+\usepackage[DCM,LogoGreen]{uaThesisP}
+%\endinput
+%\usepackage{a4wide}
+%\usepackage{fancybox}
+\usepackage{fancyheadings}
+%\usepackage{a4wide,fancyhdr}
+%\usepackage{url,nomencl,eurosym}
+\usepackage{amscd,amssymb,amsthm,amsmath,amsfonts}
+%\usepackage[pstarrows]{pict2e}
+%\usepackage{mathrsfs,eufrak}
+%\usepackage{pagesInBib}
+%\usepackage{multicol,stabular}
+%\usepackage{makeidx}\makeindex\makeglossary
+
+% para ver as referências - TIRAR no FIM!!!!!!!
+%\usepackage[notref]{showkeys}
+
+% do mail do Prof. Caetano
+%\usepackage[pdflatex,bookmarksnumbered]{hyperref}% opção 2
+%\usepackage[colorlinks,linkcolor=blue,citecolor=red,urlcolor=green,%
+%            bookmarks=false,bookmarksnumbered]{hyperref}
+%% \usepackage[colorlinks,linkcolor=blue,citecolor=red,urlcolor=green,%
+%%             bookmarksnumbered]{hyperref}% opção 1
+
+
+%%% PAV %%%
+
+%\let\pav@include\include
+%\def\include#1{\pav@include{#1}\if@tempswa\cleardoublepage\fi}
+%\def\cleardoublepage{{\clearpage\if@twoside\ifodd\c@page\else\hbox{}%
+%      \thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}}
+
+\def\cprime{\/{\mathsurround=0pt$'$}}
+
+
+%\def\BR@backref#1{\newblock\begingroup[%
+%    \csname @safe@activestrue\endcsname%
+%    \expandafter\providecommand\csname brc@#1\endcsname{0}%
+%    \expandafter\providecommand\csname brcd@#1\endcsname{0}%
+%    \csname @safe@activesfalse\expandafter\endcsname%
+%    \expandafter\backref\csname br@#1\expandafter\endcsname%
+%    \expandafter\backrefalt\csname brc@#1\expandafter\endcsname%
+%    \csname brl@#1\expandafter\endcsname%
+%    \csname brcd@#1\expandafter\endcsname%
+%    \csname brld@#1\endcsname]\endgroup\par}
+
+\def\MakeUppercase{}
+\def\ps@tese{\ps@fancy\addtolength{\headheight}{4pt}%
+%  \setlength{\headrulewidth}{1pt}%
+  \def\sectionmark##1{\markright{\thesection\ ##1}}%
+  \def\chaptermark##1{\markboth{\thechapter.\ ##1}{}}\cfoot{}%
+  \lhead[\rm\thepage]{\sl\rightmark}\rhead[\sl\leftmark]{\rm\thepage}}
+
+%%% PAV %%%
+
+%Indentação parágrafo
+
+%\makeatletter
+\let\@afterindentfalse\@afterindenttrue\@afterindenttrue
+%\makeatother
+
+
+
+%\addtolength{\evensidemargin}{-0.24cm}   %apenas para imprimir no Office Center
+
+
+\renewcommand{\baselinestretch}{1.5}   %espaçamento entre linhas
+
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+
+% %\newtheorem{theorem}{Theorem}[section]
+% %\newtheorem{definition}[theorem]{Definition}
+% %\newtheorem{lemma}[theorem]{Lemma}
+% %\newtheorem{proposition}[theorem]{Proposition}
+% %\newtheorem{corollary}[theorem]{Corollary}
+% %\newtheorem{example}[theorem]{Example}
+% %\newtheorem{remark}[theorem]{Remark}
+% %\newtheorem{notation}[theorem]{Notation}
+% %\newtheorem{convention}[theorem]{Convention}
+% %\newtheorem{assumption}[theorem]{Assumption}
+%
+% \newtheorem{theorem}{TheorON}[section]
+%
+%
+% \theoremstyle{plain}
+% %\newtheorem{theorem}{Theorem}[section]
+% %\newtheorem{corollary}[theorem]{Corollary}
+% %\newtheorem{lemma}[theorem]{Lemma}
+% %\newtheorem{proposition}[theorem]{Proposition}
+% %\newtheorem{conjecture}[theorem]{Conjecture}
+% %\newtheorem{axiom}{Axiom}
+% \theoremstyle{definition}
+% %\newtheorem{definition}{Definition}[section]
+% %\newtheorem{notation}{Notation}
+% \theoremstyle{remark}
+% %\newtheorem{remark}{Remark}[section]
+% %\newtheorem{example}{Example}[section]
+% \def\thenotation{}
+% \def\theequation{\thesection.\arabic{equation}}
+% \numberwithin{equation}{section}
+% \def\thetable{\thesection.\arabic{table}}
+% \numberwithin{table}{section}
+% \def\thefigure{\thesection.\arabic{figure}}
+% \numberwithin{figure}{section}
+% \newcommand{\mvec}[1]{\mbox{\bfseries\itshape #1}}
+
+
+
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+
+\def\R{\mathbb{R}}
+\def\C{\mathbb{C}}
+\def\K{\mathbb{K}}
+\def\Q{\mathbb{Q}}
+\def\Z{\mathbb{Z}}
+\def\N{\mathbb{N}}
+\def\No{{\mathbb{N}_0}}
+\def\Rn{{\mathbb{R}^n}}
+\def\Cn{{\mathbb{C}^n}}
+\def\Zn{{\mathbb{Z}^n}}
+\def\Kn{{\mathbb{K}^n}}
+\def\S{{\cal S}}
+\def\F{{\cal F}}
+\def\epsilon{\varepsilon}
+%\def\phi{\varphi}
+\def\s{\mathfrak s}
+\def\h{\textbf{\textit{h}}}
+\def\u{\widetilde u}
+\def\Ek{E_{\epsilon,k}}
+
+\let\imp\Rightarrow
+\let\iff\Leftrightarrow
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Diam}{Diam}
+\DeclareMathOperator{\Imp}{Im}
+\DeclareMathOperator{\Dim}{dim}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Lip}{Lip}
+\DeclareMathOperator{\ext}{ext}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\esssup}{ess\,sup}
+\DeclareMathOperator{\id}{id}
+\newcommand{\Hcirc}{\mathring H^1}
+
+
+
+
+\newcommand{\D}{\mathcal{D}}
+
+\def\Constr#1#2#3#4#5#6#7#8{
+\underset{\substack{#2\vphantom{#7}\\[.5ex]\textstyle#3\vphantom{#8}}}{#1}
+\underset{\substack{\text{snowfl.}\\\hskip3em}}\rightsquigarrow#4
+\underset{\substack{\textstyle #5\\\hskip3em}}\rightarrow
+\underset{\substack{#7\vphantom{#2}\\[.5ex]\textstyle#8\vphantom{#3}}}{#6}}
+
+
+\def\bibname{Referências Bibliográficas}
+
+
+
+\def\limfunc#1{\mathop{\rm #1}}%
+\def\dsum{\mathop{\displaystyle \sum }}%
+\def\dprod{\mathop{\displaystyle \prod }}%
