@@ -27,8 +27,8 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
 
 3. **Colocar tudo a funcionar**:
 
-* baixar o zip com modelo de dissertação
-* como tudo funciona
+* baixar o zip com modelo de dissertação : [LINK](https://github.com/jpcaveiro/latex/blob/main/modelo_disserta%C3%A7%C3%A3o_2021-03-15.zip)
+* ver como tudo funciona.
 
 4. **Exploração seguindo aspetos do livro**.
 
