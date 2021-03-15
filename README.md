@@ -3,7 +3,8 @@
 
 Modelo e introdução ao LaTeX para dissertação de mestrado.
 
-![img](README/gif.latex)
+![image](https://user-images.githubusercontent.com/11158247/111152233-6adf5600-8588-11eb-8677-6d4e121ec687.png)
+
 
 ```latex
 f(x) = \frac{1}{ \sigma \sqrt{2 \pi} } 
