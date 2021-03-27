@@ -36,6 +36,7 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
 
 * Uma não tão pequena introdução ao LATEX2 (Ou LATEX2" em 137 minutos) de Tobias Oetiker
   Hubert Partl, Irene Hyna e Elisabeth Schlegl Tradução portuguesa por Alberto Simões Versão 4.20.1, 18 de Setembro de 2007.
+* [Learn LaTeX in 30 minutes, Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)  
 
 # Sugestão de ferramentas
 
