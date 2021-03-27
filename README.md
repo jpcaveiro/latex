@@ -12,7 +12,7 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
 ```
 
 * Formador: [João Pedro Cruz](http://sweet.ua.pt/pedrocruz/)
-* Data: a definir
+* Data: pedir informação ( pedrocruz@ua.pt )
 * Duração: 2h a 3h
 
 # Curso
