@@ -19,7 +19,7 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
 
 1. **Instalação em Windows**
 
-* Primeiro sistema LaTeX: https://miktex.org/download
+* Primeiro instalar o sistema LaTeX: https://miktex.org/download
 * Depois a escolha por um editor: https://www.texstudio.org/
 
 2. **Editores online** (com versões gratuitas e pagas) que não precisam de instalação:
