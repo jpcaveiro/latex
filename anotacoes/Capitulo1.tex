@@ -1,0 +1,100 @@
+% !TeX spellcheck = pt_BR
+
+\documentclass[Tese.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Introdução}
+
+\rightline
+{\textit{``The mind that opens to a new idea never returns to its original size''}}
+\rightline{Albert Einstein (1879 - 1955)}
+
+
+IMAGENS
+
+texto antes
+
+%inclusão de gráficos (png, jpeg, pdf, ...)
+% \usepackage{graphicx}
+
+\begin{figure}[H]
+	\includegraphics[width=10cm]{img/ilha.png}
+\end{figure}	
+
+% NOTA: [h] é uma recomendação ao motor TeX
+% [H] força mesmo a posição.
+
+texto depois
+
+% https://pt.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_3):_Figures,_Subfigures_and_Tables
+
+
+% \label e \ref
+% Como podemos ver na Fig.~\ref{fig:three sin x} 
+% Como podemos ver na Fig.~1
+% \label{fig:three sin x}  declara onde está a referência
+% \ref{fig:three sin x}    utiliza a referência
+
+
+\section{Antecedentes e motivação}
+
+A educação é um processo dinâmico 
+
+
+% \theoremstyle{plain}
+% \newtheorem{theorem}{Teorema}[section]
+
+\begin{theorem}\label{teo: importante}
+	um pequeno teorema antes de um grande teorema [Altman, D.G. (1991)]
+\end{theorem}
+
+
+\begin{theorem}\label{teo: importante}
+	um pequeno teorema antes de um grande teorema \cite{altman91}
+\end{theorem}
+
+% no ficheiro bilbliografia.tex deve estar
+%\noindent
+%\bibitem{altman91} Altman, D.G. (1991) \textit{Practical Statistics for %Medical Research}. New York: Chapman and Hall.
+
+\begin{equation}\label{eq: principal}
+	\frac{x+y}{2x}
+\end{equation}
+
+% para produzir aspas corretamente : ` ` texto  '  '
+
+E depois no ``texto'' comparando com "texto"\  posso refe\-renciar a equação (\ref{eq: principal}).
+
+% a palavra pode ser partida em \- :   refe\-renciar
+% ajuda a produzir linhas partidas assim:
+%                                                         refe  
+% renciar
+
+
+
+\begin{lemma}
+	um pequeno teorema antes de um grande teorema~\ref{teo: importante} que está na página \pageref{teo: importante}.
+
+\end{lemma}
+
+% undefined control sequence
+% \refpage não existe
+% porque o que existe é
+% \pageref
+
+
+\begin{itemize}
+
+\item  $-30\,^{\circ}\mathrm{C}$, Daqui a pouco estou a congelar. 
+
+\item  $-30$~\textcelsius
+
+\end{itemize}
+
+
+
+
+
+
+\end{document}

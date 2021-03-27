@@ -1,0 +1,208 @@
+%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'Tese.tex'"}
+
+\documentclass[a4paper,twoside,12pt,final]{report}
+
+\def\ThesisYear{2021 (ver topo do ficheiro Tese.tex para mudar esta data)}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%O documento Tese.tex é o "master" (o principal).
+%mas com este "subfiles", os capítulos podem ser compilados em separado
+\usepackage{subfiles}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Uma ou várias páginas PDF dentro da dissertação.
+%\usepackage[final]{pdfpages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Colocar o texto dentro de colunas
+\usepackage{multicol}
+
+
+\usepackage{textcomp}
+\usepackage{ragged2e}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Uso de áéíóú etc com teclado português
+\usepackage[utf8]{inputenc}
+
+%Gera letras com acentuação 
+\usepackage[T1]{fontenc}
+
+%Permite usar o \euro\ para desenhar o símbolo do euro.
+\usepackage{eurosym}
+
+%   \euro <= comando que desenha o euro €
+%   \<espaço>  <= serve mais para terminar o comando \euro
+%   \euro\ e amanhã compramos fruta
+%   Escrevendo:
+%        \euro e amanhã compramos fruta
+%   temos o resultado
+%        euroe amanhã compramos fruta
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Quando se pretende alterar o formato de numeração dos "enumerates"
+\usepackage{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%package feito na Universidade de Aveiro com o formato exigido.
+\usepackage{tese}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{amstext,amscd,mathrsfs}
+
+\usepackage{array}
+
+\usepackage{empheq}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%inclusão de gráficos (png, jpeg, pdf, ...)
+\usepackage{graphicx}
+
+%permite \begin{figure}[H] <== o "H" indica que a figura não saia do local onde foi criada.
+\usepackage{float}
+
+%figuras com várias subfiguras (a), (b), (c), ....
+\usepackage{subcaption}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setcounter{MaxMatrixCols}{10}
+
+%\usepackage[hmargin=2cm,vmargin=2cm,bmargin=1cm]{geometry}
+\usepackage[  layoutwidth=210mm, 
+              layoutheight=295mm,
+              nomarginpar,
+              nofoot,
+              textwidth=170mm, 
+              textheight=240mm, 
+              inner=25mm, 
+              verbose, 
+              outer=20mm,  
+              top=25mm,
+              centering,
+              footskip=22pt]{geometry}
+              
+\renewcommand{\baselinestretch}{1.5}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{axiom}[theorem]{Axioma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definição}
+\newtheorem{notation}[theorem]{Notação}
+\newtheorem{example}[theorem]{Exemplo}
+\newtheorem{remark}[theorem]{Nota}
+\renewcommand{\thenotation}{}
+%\renewcommand{\theequation}{\thechapter.\arabic{equation}}
+%\numberwithin{equation}{section}
+
+%Tabelas
+\usepackage{longtable}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\numberwithin{table}{section}
+
+%Figuras
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+%\numberwithin{figure}{section}
+\numberwithin{figure}{chapter}
+\newcommand{\mvec}[1]{\mbox{\bfseries\itshape #1}}
+
+
+\usepackage{lscape}
+
+% para obtenção de ºC com  \textcelsius
+\usepackage{textcomp}
+
+
+\begin{document}
+
+\graphicspath{{./img/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% contém os elementos a alterar para a dissertação 
+\include{capa}  %inclusão de um ficheiro capa.tex que é necessário abrir e procurar os elementos
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\clearpage{\thispagestyle{empty}}
+\pagestyle{tese}
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Capitulo1}   %Introdução
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage  
+\subfile{Capitulo2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Capitulo3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Capitulo4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Capitulo5} %Conclusao
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\include{bibliografia}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Apendices}
+% Apêndice é o texto ou documento usado para complementar um trabalho, que foi elaborado pelo próprio autor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\subfile{Anexos}
+%Anexo é o texto ou documento usado para complementar um trabalho, que não foi elaborado pelo próprio autor dele.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
