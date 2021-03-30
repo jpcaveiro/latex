@@ -44,5 +44,6 @@ f(x) = \frac{1}{ \sigma \sqrt{2 \pi} }
 
 * fórmulas e expressões online para copy/paste:  https://latex.codecogs.com/eqneditor/editor.php
 * TikZ: https://texample.net/tikz/examples/
+* Português: https://www.overleaf.com/learn/latex/portuguese
 * pesquisa de "desenho livre" para encontrar o "símbolo latex" http://detexify.kirelabs.org/classify.html
 * pesquisa visual de letras gregas: https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols
