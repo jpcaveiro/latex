@@ -1,8 +1,10 @@
-%sagemathcloud={"latex_command":"pdflatex -synctex=1 -interact=nonstopmode 'Tese.tex'"}
 
+% Prof. Tomás Oliveira no DETI
+% TeX  <= baixo nível      LaTeX <= utilizadores
 \documentclass[a4paper,twoside,12pt,final]{report}
 
 \def\ThesisYear{2021 (ver topo do ficheiro Tese.tex para mudar esta data)}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -32,12 +34,30 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Uso de áéíóú etc com teclado português
-\usepackage[utf8]{inputenc}
+% ASCII letras que usavam 7 bits => 128 símbolos diferentes (apenas)
+% MSDOS/Windows => latin1 => já permite acentuação em várias línguas  (não é uniforme)
+% unicode => "utf8" => standard da internet, linux, e que nem sempre está dispononível em app windows
+% ERRO principal é que "ção" => "?????"
+% regra: manter o mesmo computador e mesma impressora até ao final da dissertação!
+
+%permite ler acentos do teclado português
+\usepackage[utf8]{inputenc}  
+% a alternativa:
+% inovação => inova\c c\~ao  =>  \~a = ã   "\c c" => ç
+% texto que mistura inglês com português.
+
+%conselho:
+% 1. tese.tex => tese_final.tex => tese_final_final2.tex => tese_final_final_da_final.tex
+% 2. tese.tex e fazer cópias regulares tese-2021-03-30.tex, tese-2021-04-15.tex, etc
+%     mantendo sempre o trabalho fresco em "tese.tex"
+% 3. Guardar ficheiros no proprio email 
+% 4. STIC: guardar 3 cópias em lugares distintos
 
 %Gera letras com acentuação 
 \usepackage[T1]{fontenc}
 
 %Permite usar o \euro\ para desenhar o símbolo do euro.
+% \euro\   => "\euro"  (desenha o símbolo; depois o "\ " assegura um espaço depois do símbolo euro.
 \usepackage{eurosym}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -56,8 +76,13 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{amsfonts,amsmath,amssymb,graphicx}
+%
+% AMS = American Mathematical Society 
+%
+\usepackage{amsfonts,amsmath,amssymb}
 \usepackage{amstext,amscd,mathrsfs}
+
+
 \usepackage{array}
 \usepackage{empheq}
 
